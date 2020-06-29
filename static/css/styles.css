@@ -1,0 +1,89 @@
+.para{
+  font-size: 20px;
+  font-family: 'Satisfy', cursive;
+  color: black
+
+}
+
+body{
+	font-family: Arial, Helvetica,sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.container{
+	padding: 5px;
+	position: relative;
+	background: linear-gradient(45deg, #7b4397, #dc2430);
+	background-size: 250% 250%;
+	animation: change-gradient 10s ease-in-out infinite;
+}
+@keyframes change-gradient {
+	0%{
+		background-position: 0 50%;
+	}
+	50%{
+		background-position: 100% 50%;
+	}
+	100%{
+		background-position: 0 50%;
+	}
+}
+
+
+/* Text Area */
+.ml-container{
+    margin: 30px 0;
+	flex: 1 0 auto;
+}
+
+.message-box{
+    margin-bottom: 20px;
+}
+
+/* Predict Button */
+.my-cta-button{
+    background: #f9f9f9;
+    border: 1.5px solid #000000;
+    border-radius: 1000px;
+    box-shadow: 3px 3px #8c8c8c;
+    padding: 10px 36px;
+    color: #000000;
+    display: inline-block;
+    font: italic bold 20px/1 "Calibri", sans-serif;
+    text-align: center;
+}
+
+.my-cta-button:hover{
+    color: #4d089a;
+    border: 2px solid #4d089a;
+}
+
+.my-cta-button:active{
+    box-shadow: 0 0;
+}
+
+
+.footer{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  height: 35px;
+  width: 100%;
+  background-color: black;
+  color: white;
+  text-align: center;
+
+}
+
+.footer-description{
+  margin: 0;
+  font-size: 25px;
+  font-family: 'Just Another Hand', cursive;
+  color: white
+}

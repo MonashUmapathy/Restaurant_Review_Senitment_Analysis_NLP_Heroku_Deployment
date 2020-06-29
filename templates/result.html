@@ -1,0 +1,25 @@
+{%extends "base.html" %}
+
+{% block content %}
+
+
+<!-- Result -->
+      <div class="results">
+      {% if prediction==1 %}
+        <h1>Prediction: <span class='safe'>Great! This is a POSITIVE Review.</span></h1>
+        <img class="gif" src="{{ url_for('static', filename='icon/Positive_review.gif') }}" alt="Positive Review">
+      {% elif prediction==0 %}
+        <h1>Prediction: <span class='danger'>Oops! This is a NEGATIVE Review.</span></h1>
+        <img class="gif" src="{{ url_for('static', filename='icon/Negative_review.gif') }}" alt="Negative Review">
+      {% endif %}
+      </div>
+
+        <form action="{{ url_for('home') }}" method="[POST ,GET]">
+
+              <input type="submit" class="my-cta-button" value="Back">
+
+       </form>
+
+
+
+{% endblock content%}
