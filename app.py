@@ -3,7 +3,7 @@ from flask import Flask, render_template, request,url_for
 import pickle
 import re
 from nltk.stem.porter import PorterStemmer
-from nltk.corpus import stopwords
+#from nltk.corpus import stopwords
 from nltk.stem import WordNetLemmatizer
 ps = PorterStemmer()
 lemmatizer = WordNetLemmatizer()
@@ -29,11 +29,11 @@ def predict():
     if request.method == 'POST':
         message = request.form['message']
         new_review =  re.sub("[^a-zA-Z]", " ",message)
-        new_review = new_review.lower().split()
+        new_review = new_review.lower() #.split()
 
-        new_review = [lemmatizer.lemmatize(word) for word in new_review if word not in set(stopwords.words("english"))]
+       # new_review = [lemmatizer.lemmatize(word) for word in new_review if word not in set(stopwords.words("english"))]
 
-        new_review = " ".join(new_review)
+       # new_review = " ".join(new_review)
         data = [new_review]
         vect = cv.transform(data).toarray()
         my_prediction =  classifier.predict(vect)
