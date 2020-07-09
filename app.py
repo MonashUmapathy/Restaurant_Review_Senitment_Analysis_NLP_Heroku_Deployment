@@ -4,7 +4,9 @@ import pickle
 import re
 from nltk.stem.porter import PorterStemmer
 from nltk.corpus import stopwords
+from nltk.stem import WordNetLemmatizer
 ps = PorterStemmer()
+lemmatizer = WordNetLemmatizer()
 
 
 # Load the Multinomial Naive Bayes model and CountVectorizer object from disk
@@ -29,7 +31,7 @@ def predict():
         new_review =  re.sub("[^a-zA-Z]", " ",message)
         new_review = new_review.lower().split()
 
-        new_review = [ps.stem(word) for word in new_review if word not in set(stopwords.words("english"))]
+        new_review = [lemmatizer.lemmatize(word) for word in new_review if word not in set(stopwords.words("english"))]
 
         new_review = " ".join(new_review)
         data = [new_review]
