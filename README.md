@@ -88,7 +88,7 @@ If you'd like to request a new function, feel free to do so by opening an issue 
 
 ![https://www.youtube.com/watch?v=bpdvNwvEeSE](https://img.shields.io/badge/Dataset-Kaggle-green.svg) ![Python 3.6](https://img.shields.io/badge/Python-3.6-Pink.svg) ![scikit-learnn](https://img.shields.io/badge/Library-Scikit_Learn-orange.svg)
 
-![LOC](https://www.google.com/search?q=naive+bayes+algorithm&source=lnms&tbm=isch&sa=X&ved=2ahUKEwi32pGSxOXqAhUo8HMBHds-DOoQ_AUoAXoECBQQAw&biw=1396&bih=686#imgrc=zb_lFeZe0yYc0M.png)
+
 
 
  
