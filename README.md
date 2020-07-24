@@ -91,4 +91,8 @@ If you'd like to request a new function, feel free to do so by opening an issue 
 
 ![flask](https://user-images.githubusercontent.com/52874412/88377965-bc4e9100-cdbd-11ea-8a9e-ac225a8162f6.png "https://flask.palletsprojects.com/en/1.1.x/")
 
+![heroku-logo](https://user-images.githubusercontent.com/52874412/88378611-f8cebc80-cdbe-11ea-9335-2c8e8d0a36a3.png)
+
+![gunicorn](https://user-images.githubusercontent.com/52874412/88378615-fb311680-cdbe-11ea-817b-084773f70a68.jpg)
+
  
